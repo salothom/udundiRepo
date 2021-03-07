@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" style="  scroll-behavior: smooth;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- My CSS -->
+
+    <link rel="stylesheet" href="quick.css">
+    <script src="udundi.js"></script>
+
+
+    <title>Udundi</title>
+</head>
+
+<body>
+
+    <div class=" row ">
+        <div class=" redCol col-6 col-md-3">
+        </div>
+    </div>
+
+    <div id="mainPage" class="exploreSection textWhite">
+        <h1 class="">Explore</h1>
+        <a onclick="openModal()" data-toggle="modal" data-target="#exploreModal">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                </svg>
+            </span>
+            <span>More Details</span>
+        </a>
+    </div>
+    <div id="exploreModal" class="modal " tabindex="-1">
+        <div class="modal-dialog ">
+            <div class=" modal-flip modal-content">
+                <div class="modal-header">
+                    <h2 class="textRed modal-title">Explore</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="openModal()"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-header-line"></div>
+
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi
+                        ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia
+                        deserunt mollit anim id est laborum.
+
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <a type="button" class="modal-button textWhite" data-bs-dismiss="modal">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" socailsMain">
+        <div class=" col-1  socails justify-content-end">
+            <img src="facebook.svg" alt="facebook">
+        </div>
+        <div class="  col-1   socails justify-content-end">
+
+            <img src="instagram.svg" alt="instagram">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

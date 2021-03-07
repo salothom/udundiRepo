@@ -1,0 +1,204 @@
+body {
+	background-image: url("forestImage.png");
+	background-color: #611818;
+	color: white;
+}
+
+.redCol {
+    /* animation: 1s ease-out 0s 1 redShrink; */
+	background-color: #611818;
+	height: 100vh;
+	z-index: -100;
+	position: absolute;
+}
+
+.exploreSection {
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 8%;
+}
+
+.exploreSection h1 {
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+	font-size: 160pt;
+	font-family: essonnesText-bold;
+}
+
+.exploreSection a {
+	width: 240px;
+	animation: 1s ease-out 0s 1 slideInFromFarLeft;
+	margin-top: -40px;
+	display: block;
+	padding: 2px;
+}
+
+.exploreSection a span {
+	font-size: 25pt;
+	letter-spacing: unset;
+	transition: 0.9s ease-in-out;
+}
+
+.exploreSection a:hover svg {
+	transition: 0.9s;
+    /* transform: rotateY(180deg); */
+	transform: rotate(180deg);
+}
+
+.exploreSection a:hover span {
+    /* text-decoration: underline; */
+	letter-spacing: 1px;
+	transition: 0.9s;
+}
+
+.textWhite {
+	color: white;
+}
+
+.textRed {
+	color: #611818;
+}
+
+.modal {
+	transition: transform 0.6s;
+}
+
+.modal-header {
+	border-bottom: 0px;
+}
+
+.modal-header-line {
+	width: 190px;
+	padding: 1px;
+	margin-top: -10px;
+	margin-left: 15px;
+	background: linear-gradient(to right, #611818, #61181800);
+}
+
+.modal-body {
+	color: black;
+    /* width: 416px; */;
+}
+
+.modal-button {
+	background: linear-gradient(to right, #611818, #A36754);
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px #979797;
+	border-radius: 1px;
+	box-shadow: 0px 0px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.modal-button:hover {
+	box-shadow: 2px 2px #303030;
+	color: white;
+	transition: 0.3s;
+}
+
+.modal-content {
+	padding: 25px;
+	animation: .7s ease-out 0s 1 zoomInModal;
+	transition: transform 0.3s;
+	opacity: 100%;
+}
+
+.modal-title {
+	font-family: essonnesText-bold;
+	font-size: 45pt;
+}
+
+.modal-dialog {
+	box-shadow: 3px 3px 3px 3px #02020280;
+	margin-left: 10%;
+}
+
+.socailsMain {
+	animation: 1s ease-out 0s 1 slideInFromRight;
+	z-index: -15;
+	position: absolute;
+	margin-bottom: 2%;
+	bottom: 0px;
+	width: 100%;
+}
+
+.socails {
+	margin-right: 0%;
+	margin-left: auto;
+}
+
+.socails img {
+	transition: 0.3s;
+}
+
+.socails:hover img {
+	transition: 0.3s;
+	background-color: #61181885;
+	border-radius: 100%;
+}
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slideInFromFarLeft {
+	0% {
+		transform: translateX(-400%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(30%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes zoomInModal {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.modal-dialog {
+		margin: auto;
+	}
+
+	.exploreSection {
+		margin-top: 70%;
+		width: 100%;
+		margin-left: auto;
+		text-align: center;
+	}
+
+	.exploreSection h1 {
+		font-size: 60pt;
+	}
+
+	.exploreSection a {
+		margin-top: -10px;
+	}
+
+	.modal-title {
+		font-family: essonnesText-bold;
+		font-size: 25pt;
+	}
+}
